@@ -13,7 +13,7 @@ public class SocketClient {
             // 创建一个流套接字并将其连接到指定 IP 地址的指定端口号(本处是本机)
             Socket socket =new Socket("127.0.0.1",2013);
             // 60s超时
-            socket.setSoTimeout(60000);
+            socket.setSoTimeout(60*1000);
 
             /** 发送客户端准备传输的信息 */
             // 由Socket对象得到输出流，并构造PrintWriter对象
